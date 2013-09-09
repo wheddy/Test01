@@ -1,0 +1,12 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW temp.vHUD_FHA_LoanLimit
+AS
+
+select *
+from temp.HUD_FHA_LoanLimit
+where SOACode = '203B'
+GO

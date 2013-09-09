@@ -1,0 +1,3 @@
+CREATE SCHEMA [QFAdDecisionMatrix]
+AUTHORIZATION [dbo]
+GO

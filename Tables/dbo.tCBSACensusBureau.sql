@@ -1,0 +1,23 @@
+CREATE TABLE [dbo].[tCBSACensusBureau]
+(
+[CBSACensusBureauID] [int] NOT NULL IDENTITY(1, 1),
+[ZIP5] [char] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZIP4] [char] (4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZIP9] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STATE CODE] [char] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STATE] [char] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[COUNTY CODE] [char] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[COUNTY NAME] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CBSA CODE] [char] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CBSA TITLE] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CBSA LSAD] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[METRO DIVISION CODE] [char] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[METRO DIVISION TITLE] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[METRO DIVISION LSAD] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CSA CODE] [char] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CSA TITLE] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CSA LSAD] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[tCBSACensusBureau] ADD CONSTRAINT [PK_tCBSACensusBureau] PRIMARY KEY CLUSTERED  ([CBSACensusBureauID]) ON [PRIMARY]
+GO
